@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+        <link rel="icon" type="image/png" href="MosheHeadshot.svg">
+    <style>
+      img.headshot {
+    max-width: 50px; /* Default headshot size */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: rotate 0.4s linear forwards; /* Rotate animation */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjusted headshot size for smaller screens */
+    img.headshot {
+        max-width: 80px;
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    /* Further adjusted headshot size for very small screens */
+    img.headshot {
+        max-width: 60px;
+    }
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 18px auto;
+            padding: 20px;
+            background-color: #fffbe6; /* Gold container background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center text */
+            animation: fadeIn 1s ease; /* Fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 20px; /* Adjusted font size for all paragraphs */
+            animation: fadeInUp 1s ease forwards; /* Slide up animation */
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .business-name {
+            font-size: 28px; /* Adjusted font size for business name */
+            font-weight: bold;
+            color: #000; /* Black text */
+            margin-bottom: 20px;
+            animation: fadeInLeft 1s ease forwards; /* Slide in from left animation */
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .position {
+            font-size: 18px; /* Adjusted font size for position */
+            color: #000; /* Black text */
+            margin-bottom: 8px;
+            animation: fadeInRight 1s ease forwards; /* Slide in from right animation */
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            p {
+                font-size: 18px; /* Adjusted font size for smaller screens */
+            }
+            .business-name {
+                font-size: 24px; /* Adjusted font size for smaller screens */
+            }
+            .position {
+                font-size: 16px; /* Adjusted font size for smaller screens */
+            }
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Style for the catalog button */
+        .catalog-button {
+            background-color: blue;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .catalog-button:hover {
+            background-color: green; /* Changes color on hover */
+        }
+
+        #downloadButton {
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        #downloadButton:hover {
+            background-color: blue;
+        }
+
+        /* Gold and Silver Prices Styles */
+        .price {
+            font-family: Arial, sans-serif; /* Arial font */
+            font-size: 36px; /* Larger font size */
+            text-align: center; /* Center align */
+            font-weight: bold; /* Bold text */
+            padding: 10px; /* Padding around the prices */
+            border-radius: 10px; /* Rounded corners */
+            margin-bottom: 20px; /* Increased margin bottom */
+            background-color: #f5f5f5; /* Light gray background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        }
+
+        .gold-price {
+            color: #FFD700; /* Gold color */
+        }
+
+        .silver-price {
+            color: #C0C0C0; /* Silver color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="business-name">Your Business Info</p>
+        <img src="Your NameHeadshot2.0.png" alt="Mr. Your Name" class="headshot">
+        <p>Your Name</p>
+        <p>71 W 47th St,, New York, NY 10036</p>
+        <p>#1001</p>
+        <p>New York, NY 10036</p>
+        <p>Call or WhatsApp: <a href="tel:6464641935">646-464-1935</a></p>
+        <p>Email: <a href="mailto:mjaziz101@gmail.com">mjaziz101@gmail.com</a></p>
+        <!-- Catalog Button -->
+                <a href="Your Business Info" class="catalog-button" id="catalogButton">View Catalog</a>
+        <!-- New button for downloading contact info -->
+        <button class="download-button" id="downloadButton" onclick="downloadContactInfo()">Save Contact</button>
+    </div>
+
+    <div class="fusion-fullwidth">
+        <div class="fusion-builder-row fusion-row">
+            <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_2 fusion-one-half fusion-column-first 1_2">
+                <div class="fusion-column-wrapper">
+                    <div class="fusion-tabs fusion-tabs-1 classic horizontal-tabs">
+                        <p class="price gold-price">Today's Gold Price</p>  
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab-b74e68f6a72b3e72786">
+                                <div class="fusion-widget-area fusion-widget-area-1 fusion
+                                -content-widget-area">
+                                <div id="gb_gold_chart_widget-3" class="widget gb_gold_chart_widget">
+                                    <div class="heading">
+                                        <h4 class="widget-title"></h4>
+                                    </div>
+                                    <iframe src="https://www.goldbroker.com/widget/iframe/live/XAU/320?currency=USD" width="100%" height="320" style="border: 0; overflow:hidden;"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="price silver-price">Today's Silver Price</p>
+                        <div class="tab-pane fade" id="tab-e8408f67ef37649c0c7">
+                            <div class="fusion-widget-area fusion-widget-area-2 fusion-content-widget-area">
+                                <div id="gb_silver_chart_widget-3" class="widget gb_silver_chart_widget">
+                                    <div class="heading">
+                                        <h4 class="widget-title"></h4>
+                                    </div>
+                                    <iframe src="https://www.goldbroker.com/widget/iframe/live/XAG/320?currency=USD" width="100%" height="320" style="border: 0; overflow:hidden;"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Function to handle the download of contact information
+    function downloadContactInfo() {
+        // Construct vCard content
+        var vCardData = [
+            'BEGIN:VCARD',
+            'VERSION:3.0',
+            'FN:Your Business Info',
+            'ADR;TYPE=WORK:;;71 W 47th St, #1001, New York, NY 10036',
+            'TEL;TYPE=CELL:+16464641935',
+            'EMAIL:mjaziz101@gmail.com',
+            'END:VCARD'
+        ].join('\n');
+
+        // Create a Blob with the vCard content
+        var blob = new Blob([vCardData], { type: 'text/vcard' });
+
+        // Create a temporary anchor element to trigger the download
+        var a = document.createElement('a');
+        a.href = window.URL.createObjectURL(blob);
+        a.download = 'Your Business Info';
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+
+    // Attach click event listener to the download button
+    document.getElementById("downloadButton").addEventListener("click", function() {
+        downloadContactInfo();
+    });
+</script>
+</body>
+</html>
